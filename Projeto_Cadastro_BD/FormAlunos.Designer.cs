@@ -31,8 +31,8 @@
             components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormAlunos));
             tabControlCadastros = new ReaLTaiizor.Controls.MaterialTabControl();
-            tabPage1 = new TabPage();
-            txtDataNasc = new ReaLTaiizor.Controls.MaterialMaskedTextBox();
+            tabPageCadastro = new TabPage();
+            txtDataNascimento = new ReaLTaiizor.Controls.MaterialMaskedTextBox();
             btnSalvar = new ReaLTaiizor.Controls.MaterialButton();
             btnCancelar = new ReaLTaiizor.Controls.MaterialButton();
             txtSenha = new ReaLTaiizor.Controls.MaterialTextBoxEdit();
@@ -49,13 +49,13 @@
             listView1 = new ListView();
             imageList = new ImageList(components);
             tabControlCadastros.SuspendLayout();
-            tabPage1.SuspendLayout();
+            tabPageCadastro.SuspendLayout();
             tabPageConsulta.SuspendLayout();
             SuspendLayout();
             // 
             // tabControlCadastros
             // 
-            tabControlCadastros.Controls.Add(tabPage1);
+            tabControlCadastros.Controls.Add(tabPageCadastro);
             tabControlCadastros.Controls.Add(tabPageConsulta);
             tabControlCadastros.Depth = 0;
             tabControlCadastros.Dock = DockStyle.Fill;
@@ -68,70 +68,70 @@
             tabControlCadastros.Size = new Size(825, 582);
             tabControlCadastros.TabIndex = 0;
             // 
-            // tabPage1
+            // tabPageCadastro
             // 
-            tabPage1.Controls.Add(txtDataNasc);
-            tabPage1.Controls.Add(btnSalvar);
-            tabPage1.Controls.Add(btnCancelar);
-            tabPage1.Controls.Add(txtSenha);
-            tabPage1.Controls.Add(cboEstado);
-            tabPage1.Controls.Add(txtCidade);
-            tabPage1.Controls.Add(txtBairro);
-            tabPage1.Controls.Add(txtEndereco);
-            tabPage1.Controls.Add(txtNome);
-            tabPage1.Controls.Add(txtMatricula);
-            tabPage1.ImageKey = "form.png";
-            tabPage1.Location = new Point(4, 31);
-            tabPage1.Name = "tabPage1";
-            tabPage1.Padding = new Padding(3);
-            tabPage1.Size = new Size(817, 547);
-            tabPage1.TabIndex = 0;
-            tabPage1.Text = "Cadastro";
-            tabPage1.UseVisualStyleBackColor = true;
+            tabPageCadastro.Controls.Add(txtDataNascimento);
+            tabPageCadastro.Controls.Add(btnSalvar);
+            tabPageCadastro.Controls.Add(btnCancelar);
+            tabPageCadastro.Controls.Add(txtSenha);
+            tabPageCadastro.Controls.Add(cboEstado);
+            tabPageCadastro.Controls.Add(txtCidade);
+            tabPageCadastro.Controls.Add(txtBairro);
+            tabPageCadastro.Controls.Add(txtEndereco);
+            tabPageCadastro.Controls.Add(txtNome);
+            tabPageCadastro.Controls.Add(txtMatricula);
+            tabPageCadastro.ImageKey = "form.png";
+            tabPageCadastro.Location = new Point(4, 31);
+            tabPageCadastro.Name = "tabPageCadastro";
+            tabPageCadastro.Padding = new Padding(3);
+            tabPageCadastro.Size = new Size(817, 547);
+            tabPageCadastro.TabIndex = 0;
+            tabPageCadastro.Text = "Cadastro";
+            tabPageCadastro.UseVisualStyleBackColor = true;
             // 
-            // txtDataNasc
+            // txtDataNascimento
             // 
-            txtDataNasc.AccessibleName = "";
-            txtDataNasc.AllowPromptAsInput = true;
-            txtDataNasc.AnimateReadOnly = false;
-            txtDataNasc.AsciiOnly = false;
-            txtDataNasc.BackgroundImageLayout = ImageLayout.None;
-            txtDataNasc.BeepOnError = false;
-            txtDataNasc.CutCopyMaskFormat = MaskFormat.IncludeLiterals;
-            txtDataNasc.Depth = 0;
-            txtDataNasc.Font = new Font("Microsoft Sans Serif", 16F, FontStyle.Regular, GraphicsUnit.Pixel);
-            txtDataNasc.HidePromptOnLeave = false;
-            txtDataNasc.HideSelection = true;
-            txtDataNasc.Hint = "Data de Nascimento";
-            txtDataNasc.InsertKeyMode = InsertKeyMode.Default;
-            txtDataNasc.LeadingIcon = null;
-            txtDataNasc.Location = new Point(492, 38);
-            txtDataNasc.Mask = "99/99/9999";
-            txtDataNasc.MaxLength = 32767;
-            txtDataNasc.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT;
-            txtDataNasc.Name = "txtDataNasc";
-            txtDataNasc.PasswordChar = '\0';
-            txtDataNasc.PrefixSuffixText = null;
-            txtDataNasc.PromptChar = '_';
-            txtDataNasc.ReadOnly = false;
-            txtDataNasc.RejectInputOnFirstFailure = false;
-            txtDataNasc.ResetOnPrompt = true;
-            txtDataNasc.ResetOnSpace = true;
-            txtDataNasc.RightToLeft = RightToLeft.No;
-            txtDataNasc.SelectedText = "";
-            txtDataNasc.SelectionLength = 0;
-            txtDataNasc.SelectionStart = 0;
-            txtDataNasc.ShortcutsEnabled = true;
-            txtDataNasc.Size = new Size(242, 48);
-            txtDataNasc.SkipLiterals = true;
-            txtDataNasc.TabIndex = 10;
-            txtDataNasc.TabStop = false;
-            txtDataNasc.Text = "  /  /";
-            txtDataNasc.TextAlign = HorizontalAlignment.Left;
-            txtDataNasc.TextMaskFormat = MaskFormat.IncludeLiterals;
-            txtDataNasc.TrailingIcon = null;
-            txtDataNasc.UseSystemPasswordChar = false;
-            txtDataNasc.ValidatingType = null;
+            txtDataNascimento.AccessibleName = "";
+            txtDataNascimento.AllowPromptAsInput = true;
+            txtDataNascimento.AnimateReadOnly = false;
+            txtDataNascimento.AsciiOnly = false;
+            txtDataNascimento.BackgroundImageLayout = ImageLayout.None;
+            txtDataNascimento.BeepOnError = false;
+            txtDataNascimento.CutCopyMaskFormat = MaskFormat.IncludeLiterals;
+            txtDataNascimento.Depth = 0;
+            txtDataNascimento.Font = new Font("Microsoft Sans Serif", 16F, FontStyle.Regular, GraphicsUnit.Pixel);
+            txtDataNascimento.HidePromptOnLeave = false;
+            txtDataNascimento.HideSelection = true;
+            txtDataNascimento.Hint = "Data de Nascimento";
+            txtDataNascimento.InsertKeyMode = InsertKeyMode.Default;
+            txtDataNascimento.LeadingIcon = null;
+            txtDataNascimento.Location = new Point(492, 38);
+            txtDataNascimento.Mask = "99/99/9999";
+            txtDataNascimento.MaxLength = 32767;
+            txtDataNascimento.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT;
+            txtDataNascimento.Name = "txtDataNascimento";
+            txtDataNascimento.PasswordChar = '\0';
+            txtDataNascimento.PrefixSuffixText = null;
+            txtDataNascimento.PromptChar = '_';
+            txtDataNascimento.ReadOnly = false;
+            txtDataNascimento.RejectInputOnFirstFailure = false;
+            txtDataNascimento.ResetOnPrompt = true;
+            txtDataNascimento.ResetOnSpace = true;
+            txtDataNascimento.RightToLeft = RightToLeft.No;
+            txtDataNascimento.SelectedText = "";
+            txtDataNascimento.SelectionLength = 0;
+            txtDataNascimento.SelectionStart = 0;
+            txtDataNascimento.ShortcutsEnabled = true;
+            txtDataNascimento.Size = new Size(242, 48);
+            txtDataNascimento.SkipLiterals = true;
+            txtDataNascimento.TabIndex = 10;
+            txtDataNascimento.TabStop = false;
+            txtDataNascimento.Text = "  /  /";
+            txtDataNascimento.TextAlign = HorizontalAlignment.Left;
+            txtDataNascimento.TextMaskFormat = MaskFormat.IncludeLiterals;
+            txtDataNascimento.TrailingIcon = null;
+            txtDataNascimento.UseSystemPasswordChar = false;
+            txtDataNascimento.ValidatingType = null;
             // 
             // btnSalvar
             // 
@@ -490,8 +490,8 @@
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Cadastro de Alunos";
             tabControlCadastros.ResumeLayout(false);
-            tabPage1.ResumeLayout(false);
-            tabPage1.PerformLayout();
+            tabPageCadastro.ResumeLayout(false);
+            tabPageCadastro.PerformLayout();
             tabPageConsulta.ResumeLayout(false);
             ResumeLayout(false);
         }
@@ -499,7 +499,7 @@
         #endregion
 
         private ReaLTaiizor.Controls.MaterialTabControl tabControlCadastros;
-        private TabPage tabPage1;
+        private TabPage tabPageCadastro;
         private TabPage tabPageConsulta;
         private ImageList imageList;
         private ReaLTaiizor.Controls.MaterialButton btnSalvar;
@@ -511,7 +511,7 @@
         private ReaLTaiizor.Controls.MaterialTextBoxEdit txtEndereco;
         private ReaLTaiizor.Controls.MaterialTextBoxEdit txtNome;
         private ReaLTaiizor.Controls.MaterialTextBoxEdit txtMatricula;
-        private ReaLTaiizor.Controls.MaterialMaskedTextBox txtDataNasc;
+        private ReaLTaiizor.Controls.MaterialMaskedTextBox txtDataNascimento;
         private ListView listView1;
         private ReaLTaiizor.Controls.MaterialButton btnNovo;
         private ReaLTaiizor.Controls.MaterialButton btnEditar;
