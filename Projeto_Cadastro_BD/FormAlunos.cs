@@ -223,7 +223,7 @@ namespace Projeto_Cadastro_BD
 
         private void btnExcluir_Click(object sender, EventArgs e)
         {
-            if(dataGridViewAluno.SelectedRows.Count > 0)
+            if (dataGridViewAluno.SelectedRows.Count > 0)
             {
                 if (MessageBox.Show("Deseja realmente excluir ?", "IFSP", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
@@ -236,7 +236,26 @@ namespace Projeto_Cadastro_BD
             {
                 MessageBox.Show("Selecione algum aluno", "IFSP", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
-            
+
+        }
+
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show(this, "Atenção: Informações não salvas serão perdidas. \n\n" +
+            "Deseja cancelar ?", "Pergunta", MessageBoxButtons.YesNo,
+            MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                LimpaCampos();
+                tabControlCadastros.SelectedIndex = 1;
+
+            }
+        }
+
+        private void btnNovo_Click(object sender, EventArgs e)
+        {
+            LimpaCampos();
+            tabControlCadastros.SelectedIndex = 0;
+            txtMatricula.Focus();
         }
     }
 }

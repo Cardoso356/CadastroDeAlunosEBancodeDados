@@ -207,6 +207,7 @@
             btnCancelar.Type = ReaLTaiizor.Controls.MaterialButton.MaterialButtonType.Contained;
             btnCancelar.UseAccentColor = false;
             btnCancelar.UseVisualStyleBackColor = true;
+            btnCancelar.Click += btnCancelar_Click;
             // 
             // txtSenha
             // 
@@ -467,6 +468,7 @@
             btnNovo.Type = ReaLTaiizor.Controls.MaterialButton.MaterialButtonType.Contained;
             btnNovo.UseAccentColor = false;
             btnNovo.UseVisualStyleBackColor = true;
+            btnNovo.Click += btnNovo_Click;
             // 
             // btnEditar
             // 
