@@ -15,5 +15,20 @@ namespace Projeto_Cadastro_BD
             formAlunos.MdiParent = this;
             formAlunos.Show();
         }
+
+        private void FormPrincipal_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (e.CloseReason == CloseReason.ApplicationExitCall)
+            {
+                e.Cancel = true;
+            }
+        }
+
+        private void cursoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormCursos formCursos = new FormCursos();
+            formCursos.MdiParent = this;
+            formCursos.Show();
+        }
     }
 }

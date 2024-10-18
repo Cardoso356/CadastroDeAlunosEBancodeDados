@@ -12,7 +12,7 @@ namespace Projeto_Teste
         {
             string c = @"server=127.0.0.1;" +
                         "uid=root;" +
-                        "pwd=ifsp;" +
+                        "pwd=cardoso;" + //esse é o campo da senha do MySQL, no pc do IF é ifsp, no meu é cardoso
                         "database=academico";
             return new MySqlConnection(c);
         }

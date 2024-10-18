@@ -19,7 +19,7 @@ namespace Projeto_Cadastro_BD
         bool isAlteracao = false;
         string conexao = @"server=127.0.0.1;" +
                         "uid=root;" +
-                        "pwd=ifsp;" +
+                        "pwd=cardoso;" + //esse é o campo de senha do MySQL
                         "database=academico";
 
         public FormAlunos()
@@ -193,7 +193,7 @@ namespace Projeto_Cadastro_BD
             }
             else
             {
-                MessageBox.Show("Selecionen algum aluno", "IFSP", MessageBoxButtons.OK);
+                MessageBox.Show("Selecione algum aluno!", "IFSP", MessageBoxButtons.OK);
             }
         }
 
